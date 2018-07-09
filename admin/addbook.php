@@ -31,37 +31,37 @@
            <td height="35"><table width="100%" border="0" align="center">
            	 <tr>
            	   <td height="35">BOOK NAME:</td>
-           	   <td height="35"><input name="name"  size="30" required/></td>
+           	   <td height="35"><input type='text' name="name"  size="30"></td>
          	   </tr>
 			   
 			   <tr>
                <td height="35">AUTHOR</td>
-               <td height="35"><input name="author"  size="30" required/></td></td>
+               <td height="35"><input type='text' name="author"  size="30" required/></td></td>
              </tr>
              <tr>
                <td height="35">DESCRIPTION</td>
                <td height="35"><label for="textarea"></label>
-                 <textarea name="desc" id="textarea" style="margin: 0px; width: 252px; height: 42px;resize:none;"></textarea></td></td>
+                 <textarea name="desc" id="textarea" type='text' style="margin: 0px; width: 252px; height: 42px;resize:none;"></textarea></td></td>
              </tr>
              <tr>
                <td height="35">PUBLISHER:</td>
-               <td height="35"><input name="publisher"  size="30" required/></td></td>
+               <td height="35"><input type='text' name="publisher"  size="30" required/></td></td>
              </tr>
              <tr>
                <td height="35">EDITION:</td>
-               <td height="35"><input name="edition"  size="30" required/></td></td>
+               <td height="35"><input type='text' name="edition"  size="30" required/></td></td>
              </tr>
             <tr>
                <td height="35">ISBN:</td>
-               <td height="35"><input name="isbn"  size="30" required/><td></td>
+               <td height="35"><input type='text' name="isbn"  size="30" required/><td></td>
              </tr>
              <tr>
                <td height="35">PRICE:</td>
-               <td height="35"><input name="price"  size="30" required/></td></td>
+               <td height="35"><input type='number' name="price"  size="30" required/></td></td>
              </tr>
 			 <tr>
                <td height="35">COPIES:</td>
-               <td height="35"><input name="copies"  size="30" required/></td></td>
+               <td height="35"><input type='number' name="copies"  size="30" required/></td></td>
              </tr>
 			 
             
