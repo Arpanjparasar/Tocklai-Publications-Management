@@ -23,14 +23,14 @@
  <div class="a1-container a1-small a1-padding-32" style="margin-top:3%; margin-bottom:2px;">
         <div class="a1-card-8 a1-light-gray" style="width:500px; margin:0 auto;">
 		<div class="a1-container a1-dark-gray a1-center">
-        	<h6>ADD NEW CD</h6>
+        	<h6>ADD NEW EBOOK</h6>
         </div>
        <form id="form1" name="form1" method="post" class="a1-container" action="savecd.php">
          <table width="100%" border="0" align="center">
          <tr>
            <td height="35"><table width="100%" border="0" align="center">
            	 <tr>
-           	   <td height="35">CD NAME:</td>
+           	   <td height="35">EBOOK NAME:</td>
            	   <td height="35"><input name="name"  size="30" required/></td>
          	   </tr>
 			   
@@ -59,16 +59,13 @@
                <td height="35">PRICE:</td>
                <td height="35"><input name="price"  size="30" required/></td></td>
              </tr>
-			 <tr>
-               <td height="35">COPIES:</td>
-               <td height="35"><input name="copies"  size="30" required/></td></td>
-             </tr>
+			
 			 
             
              <tr>
              <tr>
                <td height="35">&nbsp;</td>
-               <td height="35"><input class="a1-btn a1-blue" type="submit" name="submit" id="submit" value="Add CD" >
+               <td height="35"><input class="a1-btn a1-blue" type="submit" name="submit" id="submit" value="Add EBook" >
                  <input class="a1-btn a1-blue" type="reset" name="reset" id="reset" value="Reset"></td>
              </tr>
            </table></td>

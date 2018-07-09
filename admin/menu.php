@@ -6,7 +6,7 @@
     <ul>
     <li class="gradient_menuitem gradient25"><a href="addbook.php">Add Book</a></li>
     <li class="gradient_menuitem gradient25"><a href="addcd.php">Add CD</a></li>
-    <li class="gradient_menuitem gradient25 last_item"><a title="">Add Ebook</a></li>
+    <li class="gradient_menuitem gradient25 last_item"><a href="addebook">Add Ebook</a></li>
     </ul></li>
   <li><div class="buttonbg gradient_button gradient40" style="width: 220px;"><div class="arrow"><div class="icon_4"><a>Update Books, CDs, Ebooks</a></div></div></div><ul>
     <li class="gradient_menuitem gradient25"><a title="">Update Book</a></li>
