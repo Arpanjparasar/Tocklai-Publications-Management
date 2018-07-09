@@ -18,7 +18,8 @@
  <?php include('menu.php'); ?>
  <div id="banner">
 		<img src="images/banner.jpg" width="100%" height="170"  alt=""/> 
-
-</div>
+ </div>
+ <img src="images/slid.jpg" style="margin-top:7px" width="100%" height="380px"  alt=""/> 
+ 
 </body>
 </html>
