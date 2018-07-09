@@ -13,9 +13,9 @@
     <li class="gradient_menuitem gradient25"><a title="">Update CD</a></li>
     <li class="gradient_menuitem gradient25 last_item"><a title="">Update Ebook</a></li>
     </ul></li>
-  <li><div class="buttonbg gradient_button gradient40" style="width: 71px;"><div class="icon_5"><a>Book</a></div></div></li>
-  <li><div class="buttonbg gradient_button gradient40" style="width: 60px;"><div class="icon_6"><a href="">CD</a></div></div></li>
-  <li><div class="buttonbg gradient_button gradient40"><div class="icon_7"><a href="">Ebook</a></div></div></li>
+  <li><div class="buttonbg gradient_button gradient40" style="width: 71px;"><div class="icon_5"><a href="allbook.php">Book</a></div></div></li>
+  <li><div class="buttonbg gradient_button gradient40" style="width: 60px;"><div class="icon_6"><a href="allcd.php">CD</a></div></div></li>
+  <li><div class="buttonbg gradient_button gradient40"><div class="icon_7"><a href="allebook.php">Ebook</a></div></div></li>
   <li><div class="buttonbg gradient_button gradient40" style="width: 124px;"><div class="arrow"><div class="icon_8"><a href="" class="button_8">Check Stock</a></div></div></div>
     <ul>
     <li class="gradient_menuitem gradient25"><a title="">Check Book Stock</a></li>
