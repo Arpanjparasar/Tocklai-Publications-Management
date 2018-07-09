@@ -23,14 +23,14 @@
  <div class="a1-container a1-small a1-padding-32" style="margin-top:3%; margin-bottom:2px;">
         <div class="a1-card-8 a1-light-gray" style="width:500px; margin:0 auto;">
 		<div class="a1-container a1-dark-gray a1-center">
-        	<h6>ADD NEW BOOK</h6>
+        	<h6>ADD NEW CD</h6>
         </div>
-       <form id="form1" name="form1" method="post" class="a1-container" action="savebook.php">
+       <form id="form1" name="form1" method="post" class="a1-container" action="savecd.php">
          <table width="100%" border="0" align="center">
          <tr>
            <td height="35"><table width="100%" border="0" align="center">
            	 <tr>
-           	   <td height="35">BOOK NAME:</td>
+           	   <td height="35">CD NAME:</td>
            	   <td height="35"><input name="name"  size="30" required/></td>
          	   </tr>
 			   
