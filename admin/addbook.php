@@ -55,13 +55,13 @@
                <td height="35">ISBN:</td>
                <td height="35"><input type='text' name="isbn"  size="30" required/><td></td>
              </tr>
-             <tr>
+              <tr>
                <td height="35">PRICE:</td>
-               <td height="35"><input type='number' name="price"  size="30" required/></td></td>
+               <td height="35"><input name="price"  size="30" required/></td></td>
              </tr>
 			 <tr>
                <td height="35">COPIES:</td>
-               <td height="35"><input type='number' name="copies"  size="30" required/></td></td>
+               <td height="35"><input name="copies"  size="30" required/></td></td>
              </tr>
 			 
             
