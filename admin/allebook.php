@@ -1,3 +1,11 @@
+<?php 
+// session_start();
+require('connect.php');
+
+	$q="select * from ebook";
+	 $res=mysqli_query($conn,$q) or die("Can't Execute Query...");
+	?>
+
 <html>
 <head>
 <meta charset="utf-8">
@@ -18,5 +26,36 @@
 
 </div>
 <p align="center"><h3 align="center" style="margin-top:2%">RECORDS OF ALL EBOOKS AVAILABLE</h3></p>
+
+<table border='1'>
+	<tr>
+		<th>SR.NO</th>
+		<th>NAME</th>
+		<th>PUBLISHER</th>
+		<th>PRICE</th>
+		<th>DELETE</th>
+	</tr>
+	<?php
+							$count=1;
+							while($row=mysqli_fetch_assoc($res))
+							{
+								
+							echo '<tr>
+										<td>'.$count.'
+										<td>'.$row['name'].'
+										<td>'.$row['publisher'].'
+                                <td>'.$row['price'];
+										
+										
+									echo 	'<td><a href="process_del_ebook.php?id='.$row['eid'].'"><img src="images/drop.png" ></a></td>
+											
+							
+									</tr>';
+									$count++;
+							}
+						?>
+
+</table>
+
 </body>
 </html>

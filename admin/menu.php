@@ -18,8 +18,8 @@
   <li><div class="buttonbg gradient_button gradient40"><div class="icon_7"><a href="allebook.php">Ebook</a></div></div></li>
   <li><div class="buttonbg gradient_button gradient40" style="width: 124px;"><div class="arrow"><div class="icon_8"><a href="" class="button_8">Check Stock</a></div></div></div>
     <ul>
-    <li class="gradient_menuitem gradient25"><a title="">Check Book Stock</a></li>
-    <li class="gradient_menuitem gradient25 last_item"><a title="">Check CD Stock</a></li>
+    <li class="gradient_menuitem gradient25"><a href="checkbookstock.php">Check Book Stock</a></li>
+    <li class="gradient_menuitem gradient25 last_item"><a href="checkcdstock.php">Check CD Stock</a></li>
     </ul></li>
   <li><div class="buttonbg gradient_button gradient40" style="width: 84px;"><div class="icon_9"><a>Reports</a></div></div></li>
   <li><div class="buttonbg gradient_button gradient40" style="width: 82px;"><div class="icon_10"><a>Logout</a></div></div></li>
