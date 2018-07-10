@@ -1,3 +1,11 @@
+<?php 
+// session_start();
+require('connect.php');
+
+	$q="select * from book";
+	 $res=mysqli_query($conn,$q) or die("Can't Execute Query...");
+	?>
+
 <html>
 <head>
 <meta charset="utf-8">
@@ -8,6 +16,14 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="index_files/mbcsmbmcp.css" type="text/css" />
 
+<script>
+		function addBook(book)
+		{
+			var n=prompt("Enter the number of copies of that need to be added.");
+                if(!n=="")
+                    window.location.replace("process_add_copies.php?name="+n+"&book="+book);
+		}
+</script>
 
 <style>
 
@@ -21,5 +37,43 @@
 
 </div>
 <p align="center"><h3 align="center" style="margin-top:2%">RECORDS OF ALL BOOKS AVAILABLE</h3></p> 
+
+<table border='1'>
+	<tr>
+		<th>SR.NO</th>
+		<th>NAME</th>
+		<th>AUTHOR/EDITOR/COMPILED BY</th>
+		<th>PUBLISHER</th>
+		<th>ISBN NO</th>
+		<th>COPIES LEFT</th>
+		<th>PRICE</th>
+		<th>DELETE</th>
+		<th>ADD COPIES</th>
+	</tr>
+	<?php
+							$count=1;
+							while($row=mysqli_fetch_assoc($res))
+							{
+							echo '<tr>
+										<td>'.$count.'</td>
+										<td>'.$row['bname'].'</td>
+										<td>'.$row['author'].'</td>
+										<td>'.$row['publisher'].'</td>
+										<td>'.$row['isbn'].'</td>
+										<td>'.$row['copies'].'</td>
+										<td>'.$row['price'].'</td>';
+
+										
+										
+									echo 	'<td><a href="process_del_book.php?id='.$row['bid'].'"><img src="images/drop.png" ></a></td>
+												
+									<td><button onclick="addBook('.$row['bid'].')"><img src="images/ADD.png" ></button></td>
+									</tr>';
+									$count++;
+							}
+						?>
+
+</table>
+
 </body>
 </html>
