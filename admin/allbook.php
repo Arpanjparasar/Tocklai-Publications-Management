@@ -20,5 +20,6 @@
 		<img src="images/banner.jpg" width="100%" height="170"  alt=""/> 
 
 </div>
+<p align="center"><h3 align="center" style="margin-top:2%">RECORDS OF ALL BOOKS AVAILABLE</h3></p> 
 </body>
 </html>
