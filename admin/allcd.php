@@ -65,7 +65,7 @@ require('connect.php');
 
 										
 										
-									echo 	'<td><a href="process_del_cd.php?id='.$row['cid'].'"><img src="images/drop.png" ></a></td>
+									echo 	'<td><form action="process_del_cd" method="GET"><input type="hidden" name="id" value='.$row['cid'].'><input type="image" src="images/drop.png" onclick="return ConfirmDelete()" ></form></td>
 												
 									<td><button onclick="addBook('.$row['cid'].')"><img src="images/ADD.png" ></button></td>
 									</tr>';
@@ -74,6 +74,20 @@ require('connect.php');
 						?>
 
 </table>
+
+<script>
+	
+	function ConfirmDelete(){
+	
+    var r = confirm("Are you sure! You want to Delete this User?");
+    if (r == true) {
+       return true;
+    } else {
+        return false;
+    }
+}
+
+</script>
 
 </body>
 </html>
