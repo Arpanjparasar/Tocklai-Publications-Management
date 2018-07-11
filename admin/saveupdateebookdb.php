@@ -20,7 +20,7 @@ require('connect.php');
 		if($result){	
 		
 			echo "<head><script>alert('BOOK UPDATED');</script></head></html>";
-			echo "<meta http-equiv='refresh' content='0; url=allbook.php'>";
+			echo "<meta http-equiv='refresh' content='0; url=allebook.php'>";
 		}else{
 			echo "<head><script>alert('BOOK NOT UPDATED');</script></head></html>";
 			echo mysqli_error($conn);
