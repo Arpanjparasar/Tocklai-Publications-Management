@@ -27,11 +27,13 @@ require('connect.php');
 </div>
 <p align="center"><h3 align="center" style="margin-top:2%">RECORDS OF ALL EBOOKS AVAILABLE</h3></p>
 
-<table border='1'>
+<table border='1' align="center">
 	<tr>
 		<th>SR.NO</th>
 		<th>NAME</th>
+		<th>AUTHOR/EDITOR/COMPILED BY:</th>
 		<th>PUBLISHER</th>
+		<th>EDITION</th>
 		<th>PRICE</th>
 		<th>DELETE</th>
 	</tr>
@@ -43,7 +45,9 @@ require('connect.php');
 							echo '<tr>
 										<td>'.$count.'
 										<td>'.$row['name'].'
+										<td>'.$row['author'].'
 										<td>'.$row['publisher'].'
+										<td>'.$row['edition'].'
                                 <td>'.$row['price'];
 										
 										

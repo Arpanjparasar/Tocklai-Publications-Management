@@ -38,7 +38,7 @@ require('connect.php');
 </div>
 <p align="center"><h3 align="center" style="margin-top:2%">RECORDS OF ALL BOOKS AVAILABLE</h3></p> 
 
-<table border='1'>
+<table border='1' align="center">
 	<tr>
 		<th>SR.NO</th>
 		<th>NAME</th>

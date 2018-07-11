@@ -38,11 +38,13 @@ require('connect.php');
 
 <p align="center"><h3 align="center" style="margin-top:2%">RECORDS OF ALL CDS AVAILABLE</h3></p>
 
-<table border='1'>
+<table border='1' align="center">
 	<tr>
 		<th>SR.NO</th>
 		<th>NAME</th>
+		<th>AUTHOR/EDITOR/COMPILED BY:</th>
 		<th>PUBLISHER</th>
+		<th>ISBN NO</th>
 		<th>COPIES LEFT</th>
 		<th>PRICE</th>
 		<th>DELETE</th>
@@ -55,7 +57,9 @@ require('connect.php');
 							echo '<tr>
 										<td>'.$count.'
 										<td>'.$row['name'].'
+										<td>'.$row['author'].'
 										<td>'.$row['publisher'].'
+										<td>'.$row['isbn'].'
 										<td>'.$row['copies'].'
 										<td>'.$row['price'];
 

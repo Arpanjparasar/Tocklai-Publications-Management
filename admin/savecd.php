@@ -14,7 +14,7 @@ require('connect.php');
 			$copies=$_POST['copies'];
 			
 			
-		$query="INSERT INTO cd values(null,'$name','$auth','$desc','$publisher','$edition','$isbn',$price,$copies)";
+		$query="INSERT INTO cd values(null,'$name','$auth','$desc','$edition','$publisher','$isbn',$price,$copies)";
 	
 		$result=mysqli_query($conn,$query);
 		if($result){	

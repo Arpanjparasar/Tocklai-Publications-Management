@@ -43,11 +43,14 @@ require('connect.php');
 		<img src="images/banner.jpg" width="100%" height="170"  alt=""/> 
 
 </div>
+<input type="button" class="a1-btn a1-blue" style="margin-left:45%; margin-top:4%;"value="PRINT REPORT" onclick="myFunction()"><br><br>
+
+<div class="post" id="print">
 <p align="center"><h3 align="center" style="margin-top:2%">RECORDS OF ALL BOOKS AVAILABLE</h3></p> 
 
-<input type="button" class="a1-btn a1-green" value="PRINT REPORT" onclick="myFunction()">
-<div class="post" id="print">
-<table border='1'>
+
+
+<table border='1' align="center">
 	<tr>
 		<th>SR.NO</th>
 		<th>NAME</th>
