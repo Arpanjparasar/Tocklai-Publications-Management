@@ -65,8 +65,8 @@ require('connect.php');
 
 										
 										
-									echo 	'<td><a href="process_del_book.php?id='.$row['bid'].'"><img src="images/drop.png" ></a></td>
-												
+									echo 	'<td><form action="process_del_book" method="GET"><input type="hidden" name="id" value='.$row['bid'].'><input type="image" src="images/drop.png" onclick="return ConfirmDelete()" ></form></td>
+									
 									<td><button onclick="addBook('.$row['bid'].')"><img src="images/ADD.png" ></button></td>
 									</tr>';
 									$count++;
@@ -74,6 +74,20 @@ require('connect.php');
 						?>
 
 </table>
+
+<script>
+	
+	function ConfirmDelete(){
+	
+    var r = confirm("Are you sure! You want to Delete this User?");
+    if (r == true) {
+       return true;
+    } else {
+        return false;
+    }
+}
+
+</script>
 
 </body>
 </html>
