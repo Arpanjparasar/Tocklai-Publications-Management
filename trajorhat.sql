@@ -11,7 +11,7 @@
  Target Server Version : 50714
  File Encoding         : 65001
 
- Date: 09/07/2018 22:54:20
+ Date: 11/07/2018 23:09:04
 */
 
 SET NAMES utf8mb4;
@@ -25,19 +25,19 @@ CREATE TABLE `book`  (
   `bid` int(11) NOT NULL AUTO_INCREMENT,
   `bname` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `author` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `desc` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `des` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `publisher` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `edition` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `isbn` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `price` int(15) NOT NULL,
   `copies` int(200) NOT NULL,
   PRIMARY KEY (`bid`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 2 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 4 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of book
 -- ----------------------------
-INSERT INTO `book` VALUES (1, 'Tea Manufacturing Mannual', 'Sanyal', 'NA', 'TRA', '2005', '200554895', 250, 40);
+INSERT INTO `book` VALUES (3, 'Tea field Management', 'Sanyal', 'NA', 'Tea Research Association', '2008', '3154316441', 210, 60);
 
 -- ----------------------------
 -- Table structure for cart
@@ -63,19 +63,19 @@ CREATE TABLE `cd`  (
   `cid` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `author` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
-  `desc` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  `des` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `edition` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `publisher` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `isbn` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `price` int(10) NULL DEFAULT NULL,
   `copies` int(50) NULL DEFAULT NULL,
   PRIMARY KEY (`cid`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 2 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 3 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of cd
 -- ----------------------------
-INSERT INTO `cd` VALUES (1, 'Tea culture', 'Ahmed', 'Na', 'Tea Research Association', '2008', '45662144', 120, 60);
+INSERT INTO `cd` VALUES (2, 'Tea Culture', 'Ahmed', 'NA', '2004', 'TRA', '4562288', 160, 30);
 
 -- ----------------------------
 -- Table structure for ebook
@@ -85,18 +85,18 @@ CREATE TABLE `ebook`  (
   `eid` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `author` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `desc` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `des` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `publisher` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `edition` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `isbn` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `price` int(10) NOT NULL,
   PRIMARY KEY (`eid`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 2 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 3 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of ebook
 -- ----------------------------
-INSERT INTO `ebook` VALUES (1, 'tea mannual', 'querishi', 'NA', 'Tea Research Association', '2007', '72554555', 420);
+INSERT INTO `ebook` VALUES (2, 'Tea Culture', 'ajklop', 'NA', 'Tea Research Association', '5th Edition', '456344694', 345);
 
 -- ----------------------------
 -- Table structure for itemsold
