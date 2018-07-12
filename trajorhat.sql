@@ -1,7 +1,7 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : hp
+ Source Server         : mysql
  Source Server Type    : MySQL
  Source Server Version : 50714
  Source Host           : localhost:3306
@@ -11,7 +11,7 @@
  Target Server Version : 50714
  File Encoding         : 65001
 
- Date: 12/07/2018 16:14:21
+ Date: 13/07/2018 02:13:26
 */
 
 SET NAMES utf8mb4;
@@ -37,10 +37,10 @@ CREATE TABLE `book`  (
 -- ----------------------------
 -- Records of book
 -- ----------------------------
-INSERT INTO `book` VALUES (3, 'Tea field Management', 'Sanyal', 'NA', 'Tea Research Association', '2008', '3154316441', 210, 60);
+INSERT INTO `book` VALUES (3, 'Tea field Management', 'Sanyal', 'NA', 'Tea Research Association', '2008', '3154316441', 210, 50);
 INSERT INTO `book` VALUES (4, 'tea management', 'Wakis', 'NA', 'Tea Research Association', '2006', '6498431144', 340, 40);
-INSERT INTO `book` VALUES (5, 'PHP', 'yusub', 'NA', 'Tea Research Association', '5th Edition', '65163543', 250, 60);
-INSERT INTO `book` VALUES (6, 'russell', 'yamin', 'NA', 'Tea Research Association', '2007', '.354353', 345, 45);
+INSERT INTO `book` VALUES (5, 'PHP', 'yusub', 'NA', 'Tea Research Association', '5th Edition', '65163543', 250, 30);
+INSERT INTO `book` VALUES (6, 'russell', 'yamin', 'NA', 'Tea Research Association', '2007', '.354353', 345, 35);
 INSERT INTO `book` VALUES (7, 'TEA mannual', 'saikia', 'NA', 'Tea Research Association', '6 th edition', '456447643434', 420, 55);
 
 -- ----------------------------
@@ -57,7 +57,7 @@ CREATE TABLE `cart`  (
   `rate` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `discount` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 1 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 15 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for cd
@@ -79,7 +79,7 @@ CREATE TABLE `cd`  (
 -- ----------------------------
 -- Records of cd
 -- ----------------------------
-INSERT INTO `cd` VALUES (2, 'Tea Culture', 'Ahmed', 'NA', '2004', 'TRA', '4562288', 160, 30);
+INSERT INTO `cd` VALUES (2, 'Tea Culture', 'Ahmed', 'NA', '2004', 'TRA', '4562288', 160, 10);
 
 -- ----------------------------
 -- Table structure for ebook
@@ -119,11 +119,19 @@ CREATE TABLE `itemsold`  (
 ) ENGINE = MyISAM CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
+-- Records of itemsold
+-- ----------------------------
+INSERT INTO `itemsold` VALUES (19, 'hello', '3', 'Tea field Management', 'book', '10', '210', '0', '2018-07-13 02:12:39');
+INSERT INTO `itemsold` VALUES (18, 'hello', '6', 'russell', 'book', '10', '345', '0', '2018-07-13 02:09:00');
+INSERT INTO `itemsold` VALUES (18, 'hello', '2', 'Tea Culture', 'cd', '20', '160', '0', '2018-07-13 02:09:00');
+INSERT INTO `itemsold` VALUES (18, 'hello', '2', 'Tea Culture', 'ebook', '1', '345', '0', '2018-07-13 02:09:00');
+
+-- ----------------------------
 -- Table structure for orders
 -- ----------------------------
 DROP TABLE IF EXISTS `orders`;
 CREATE TABLE `orders`  (
-  `orderid` int(11) NOT NULL,
+  `orderid` int(11) NOT NULL AUTO_INCREMENT,
   `sellername` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `category` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
@@ -132,7 +140,13 @@ CREATE TABLE `orders`  (
   `total` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `orderdate` datetime(0) NOT NULL,
   PRIMARY KEY (`orderid`) USING BTREE
-) ENGINE = MyISAM CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 20 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of orders
+-- ----------------------------
+INSERT INTO `orders` VALUES (19, 'hello', 'Eric J Yang', 'Member', '2069  Quarry Drive', '3362013747', '2100', '2018-07-13 02:12:39');
+INSERT INTO `orders` VALUES (18, 'hello', 'Lori J Donoho', 'Member', '3527  Hart Ridge Road', '9293238998', '6995', '2018-07-13 02:09:00');
 
 -- ----------------------------
 -- Table structure for user
