@@ -128,16 +128,10 @@
 												
 												 <tr align="center" bgcolor="#EEE9F3">';
 
-												 if(isset($_SESSION['status']))
-												 {
-													echo ' <td><a href="process_cart.php?rate='.$row['e_price'].'&id='.$row['e_id'].'&nm='.$row['e_nm'].'&type=ebook">
+													echo ' <td><a href="process_cart.php?rate='.$row['price'].'&id='.$row['eid'].'&nm='.$row['name'].'&type=ebook">
 														<img src="images/addcart.jpg">
 													</a></td>';
-												}
-												else
-												{
-													echo '<td><img src="images/addcart.jpg"><br><a href="register.php"> <h4>Please Login..</h4></a></td>';
-												}
+											
 												echo '</tr>
 											</table>';
 										?>
@@ -238,32 +232,15 @@
 											<table border="0" width="100%">
 												
 												 <tr align="center" bgcolor="#EEE9F3">';
-											 if(isset($_GET['cid']))
+											 if(isset($_GET['bid']))
 												{
-											if(isset($_SESSION['status']))
-												 {
-                                                     echo ' <td><a href="process_cart.php?rate='.$row['b_price'].'&id='.$row['b_id'].'&nm='.$row['b_nm'].'&type=cd">
+										
+                                                     echo ' <td><a href="process_cart.php?rate='.$row['price'].'&id='.$row['bid'].'&nm='.$row['bname'].'&type=cd">
 														<img src="images/addcart.jpg">
 													</a></td>';
-                                                 }
-                                            else
-                                            {
-                                                echo '<td><img src="images/addcart.jpg"><br><a href="register.php"> <h4>Please Login..</h4></a></td>';
-                                            }
+                                          
 												}
-												else
-												{
-													 if(isset($_SESSION['status']))
-												 {
-													echo ' <td><a href="process_cart.php?nm='.$row['b_nm'].'&rate='.$row['b_price'].'&id='.$row['b_id'].'&type=book">
-														<img src="images/addcart.jpg">
-													</a></td>';
-												}
-												else
-												{
-													echo '<td><img src="images/addcart.jpg"><br><a href="register.php"> <h4>Please Login..</h4></a></td>';
-												}
-												}
+												
 												echo '</tr>
 											</table>';
 										?>
@@ -366,30 +343,13 @@
 												 <tr align="center" bgcolor="#EEE9F3">';
 											 if(isset($_GET['cid']))
 												{
-											if(isset($_SESSION['status']))
-												 {
-                                                     echo ' <td><a href="process_cart.php?rate='.$row['b_price'].'&id='.$row['b_id'].'&nm='.$row['b_nm'].'&type=cd">
+									
+                                                     echo ' <td><a href="process_cart.php?rate='.$row['price'].'&id='.$row['cid'].'&nm='.$row['name'].'&type=cd">
 														<img src="images/addcart.jpg">
 													</a></td>';
                                                  }
-                                            else
-                                            {
-                                                echo '<td><img src="images/addcart.jpg"><br><a href="register.php"> <h4>Please Login..</h4></a></td>';
-                                            }
-												}
-												else
-												{
-													 if(isset($_SESSION['status']))
-												 {
-													echo ' <td><a href="process_cart.php?nm='.$row['b_nm'].'&rate='.$row['b_price'].'&id='.$row['b_id'].'&type=book">
-														<img src="images/addcart.jpg">
-													</a></td>';
-												}
-												else
-												{
-													echo '<td><img src="images/addcart.jpg"><br><a href="register.php"> <h4>Please Login..</h4></a></td>';
-												}
-												}
+                        
+												
 												echo '</tr>
 											</table>';
 										?>
