@@ -19,5 +19,7 @@
 		<img src="images/banner.jpg" width="100%" height="170"  alt=""/> 
 
 </div>
+<br><br>
+<?php include'footer.php' ?>
 </body>
 </html>

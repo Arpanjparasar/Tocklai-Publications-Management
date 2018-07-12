@@ -46,7 +46,7 @@
 		?>
 
 
-					<h1 class="title"><?php echo $row['name'];?></h1>
+					<h4 class="title" align="center"><?php echo $row['name'];?></h4>
 									<div class="entry">
 										<?php
 
@@ -74,7 +74,12 @@
 																<td align="left">'.$row['name'].'</td>
 															</tr>
 
-															
+															<tr>
+																<td align="right">Author/Editor/Compiled BY</td>
+																<td>: </td>
+																<td align="left">'.$row['author'].'</td>
+																
+															</tr>
 															
 																					
 															<tr>
@@ -117,9 +122,9 @@
 												</tr>
 																		
 											 </table>
-											 
-											 '.$row['des'].'
-																				
+											 <table border="0" width="60%" align="center">
+											<td> '.$row['des'].' </td>
+												</table>								
 
 											 
 											 <tr><td colspan=2><hr color="purple"></td></tr>
@@ -129,7 +134,7 @@
 												 <tr align="center" bgcolor="#EEE9F3">';
 
 													echo ' <td><a href="process_cart.php?rate='.$row['price'].'&id='.$row['eid'].'&nm='.$row['name'].'&type=ebook">
-														<img src="images/addcart.jpg">
+														<input type="button" class="a1-btn a1-blue" value="ADD TO CART">
 													</a></td>';
 											
 												echo '</tr>
@@ -143,11 +148,11 @@
 	}else if(isset($_GET['bid']))
 	{
 	?>
-									<h1 class="title"><?php echo $row['bname'];?></h1>
+									<h4 class="title" align="center"><?php echo $row['bname'];?></h4>
 									<div class="entry">
 										<?php
 										
-											echo '	<table border="0" width="100%">
+											echo '	<table border="0" width="60%" align="center">
 												 <tr>
 													<td><hr color="purple"></td>
 												</tr>
@@ -159,7 +164,7 @@
 												</tr>
 											 </table>
 											
-											<table border="0"  width="100%" bgcolor="#ffffff">
+											<table border="0"  width="60%" align="center">
 												
 											
 												<tr> 
@@ -170,7 +175,12 @@
 																<td width="6%">: </td>
 																<td align="left">'.$row['bname'].'</td>
 															</tr>
-
+															<tr>
+																<td align="right">Author/Editor/Compiled BY</td>
+																<td>: </td>
+																<td align="left">'.$row['author'].'</td>
+																
+															</tr>
 															
 															<tr>
 																<td align="right">Copies Left</td>
@@ -210,7 +220,7 @@
 										
 												
 											
-											<table border="0" width="100%">
+											<table border="0" width="60%" align="center">
 												 <tr>
 													<td><hr color="purple"></td>
 												</tr>
@@ -221,22 +231,23 @@
 													<td><hr color="purple"></td>
 												</tr>
 																		
+											
 											 </table>
-											 
-											 '.$row['des'].'
-																				
-
+											<table border="0" width="60%" align="center">
+											<td> '.$row['des'].' </td>
+												</table>								
+												
 											 
 											 <tr><td colspan=2><hr color="purple"></td></tr>
 											
-											<table border="0" width="100%">
+											<table border="0" width="60%" align="center">
 												
 												 <tr align="center" bgcolor="#EEE9F3">';
 											 if(isset($_GET['bid']))
 												{
 										
                                                      echo ' <td><a href="process_cart.php?rate='.$row['price'].'&id='.$row['bid'].'&nm='.$row['bname'].'&type=cd">
-														<img src="images/addcart.jpg">
+														<input type="button" class="a1-btn a1-blue" value="ADD TO CART">
 													</a></td>';
                                           
 												}
@@ -252,11 +263,11 @@
 	else 
 	{
 	?>
-									<h1 class="title"><?php echo $row['name'];?></h1>
+									<h4 class="title" align="center"><?php echo $row['name'];?></h4>
 									<div class="entry">
 										<?php
 										
-											echo '	<table border="0" width="100%">
+											echo '	<table border="0" width="60%" align="center">
 												 <tr>
 													<td><hr color="purple"></td>
 												</tr>
@@ -268,7 +279,7 @@
 												</tr>
 											 </table>
 											
-											<table border="0"  width="100%" bgcolor="#ffffff">
+											<table border="0"  width="60%" align="center">
 												
 											
 												<tr> 
@@ -280,7 +291,12 @@
 																<td align="left">'.$row['name'].'</td>
 															</tr>
 
-															
+															<tr>
+																<td align="right">Author/Editor/Compiled BY</td>
+																<td>: </td>
+																<td align="left">'.$row['author'].'</td>
+																
+															</tr>
 															<tr>
 																<td align="right">Copies Left</td>
 																<td>: </td>
@@ -319,7 +335,7 @@
 										
 												
 											
-											<table border="0" width="100%">
+											<table border="0" width="60%" align="center">
 												 <tr>
 													<td><hr color="purple"></td>
 												</tr>
@@ -331,21 +347,22 @@
 												</tr>
 																		
 											 </table>
+											 <table border="0" width="60%" align="center">
 											 
-											 '.$row['des'].'
+										<td>	 '.$row['des'].'  </td>
 																				
-
+											</table>
 											 
 											 <tr><td colspan=2><hr color="purple"></td></tr>
 											
-											<table border="0" width="100%">
+											<table border="0" width="60%" align="center">
 												
 												 <tr align="center" bgcolor="#EEE9F3">';
 											 if(isset($_GET['cid']))
 												{
 									
                                                      echo ' <td><a href="process_cart.php?rate='.$row['price'].'&id='.$row['cid'].'&nm='.$row['name'].'&type=cd">
-														<img src="images/addcart.jpg">
+														<input type="button" class="a1-btn a1-blue" value="ADD TO CART">
 													</a></td>';
                                                  }
                         
@@ -359,7 +376,8 @@
 	?>
 	
 									
-
+<br><br>
+<?php include'footer.php' ?>
 
 </body>
 </html>
