@@ -29,7 +29,7 @@
 		while($row=mysqli_fetch_array($result))
 		{
 			
-			echo '<div class="a1-quarter a1-center a1-padding-12"><a href="detail.php?id='.$row['cid'].'&type=cd">
+			echo '<div class="a1-quarter a1-center a1-padding-12"><a href="detail.php?cid='.$row['cid'].'&type=cd">
 					<br>'.$count.')
 					'.$row["name"].'<br>
 					Rs. '.$row["price"].'<br></a>
