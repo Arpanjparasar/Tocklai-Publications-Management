@@ -11,7 +11,7 @@
  Target Server Version : 50714
  File Encoding         : 65001
 
- Date: 11/07/2018 23:09:04
+ Date: 12/07/2018 16:14:21
 */
 
 SET NAMES utf8mb4;
@@ -32,12 +32,16 @@ CREATE TABLE `book`  (
   `price` int(15) NOT NULL,
   `copies` int(200) NOT NULL,
   PRIMARY KEY (`bid`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 4 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 8 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of book
 -- ----------------------------
 INSERT INTO `book` VALUES (3, 'Tea field Management', 'Sanyal', 'NA', 'Tea Research Association', '2008', '3154316441', 210, 60);
+INSERT INTO `book` VALUES (4, 'tea management', 'Wakis', 'NA', 'Tea Research Association', '2006', '6498431144', 340, 40);
+INSERT INTO `book` VALUES (5, 'PHP', 'yusub', 'NA', 'Tea Research Association', '5th Edition', '65163543', 250, 60);
+INSERT INTO `book` VALUES (6, 'russell', 'yamin', 'NA', 'Tea Research Association', '2007', '.354353', 345, 45);
+INSERT INTO `book` VALUES (7, 'TEA mannual', 'saikia', 'NA', 'Tea Research Association', '6 th edition', '456447643434', 420, 55);
 
 -- ----------------------------
 -- Table structure for cart
