@@ -13,9 +13,9 @@ require('connect.php');
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="index_files/mbcsmbmcp.css" type="text/css" />
     <script>
-    function addQuantity(i,n) {
+    function addQuantity(i,n,t,itid) {
         if (n) {
-            window.location.replace("process_add_quantity.php?quantity=" + n + "&id=" + i);
+            window.location.replace("process_add_quantity.php?quantity=" + n + "&id=" + i+"&type="+t+"&itid="+itid);
         }
         else
             window.location.replace("viewcart.php");
@@ -91,9 +91,12 @@ require('connect.php');
 										<td>'.$count.'</td>
 										<td>'.$row['name'].'</td>
 										<td>'.$row['type'].'</td>
-										<td>'.$row['rate'].'</td>
-										<td><input type="number" style="width:40px;" onchange="addQuantity('.$row['id'].',this.value)" name="quantity" value="'.$row['quantity'].'"></td>
-										<td><input type="number" style="width:40px;" onchange="processDiscount('.$row['id'].',this.value)" name="discount" value="'.$row['discount'].'"></td>';
+										<td>'.$row['rate'].'</td>';
+									  if($row['type']=="ebook")
+									    echo '<td><input type="text" readonly style="width:40px;" name="quantity" value="NA"></td>';
+									  else
+									    echo '<td><input type="number" style="width:40px;" onchange="addQuantity('.$row['id'].',this.value,\''.$row['type'].'\','.$row['itemid'].')" name="quantity" value="'.$row['quantity'].'"></td>';
+									echo '<td><input type="number" style="width:40px;" onchange="processDiscount('.$row['id'].',this.value)" name="discount" value="'.$row['discount'].'"></td>';
                                     echo 	'<td>'.$price.'</td>
 <td><a href="process_del_quantity.php?id='.$row['id'].'"><img src="images/drop.png" ></a></td>
 												

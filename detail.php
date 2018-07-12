@@ -246,7 +246,7 @@
 											 if(isset($_GET['bid']))
 												{
 										
-                                                     echo ' <td><a href="process_cart.php?rate='.$row['price'].'&id='.$row['bid'].'&nm='.$row['bname'].'&type=cd">
+                                                     echo ' <td><a href="process_cart.php?rate='.$row['price'].'&id='.$row['bid'].'&nm='.$row['bname'].'&type=book">
 														<input type="button" class="a1-btn a1-blue" value="ADD TO CART">
 													</a></td>';
                                           
