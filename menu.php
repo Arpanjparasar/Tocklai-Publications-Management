@@ -5,7 +5,7 @@
   <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_3"><a href="viewcd.php">CD</a></div></div></li>
   <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_4"><a href="viewebook.php">Ebook</a></div></div></li>
   <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_5"><a href="">Memo</a></div></div></li>
-  <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_6"><a>Viewcart</a></div></div></li>
+  <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_6"><a href="viewcart.php">Viewcart</a></div></div></li>
   <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_7"><a>Logout</a></div></div></li>
   </ul>
 </div>
