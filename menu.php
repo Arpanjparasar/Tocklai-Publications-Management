@@ -1,9 +1,9 @@
 <div id="mbmcpebul_wrapper" style="max-width: 100%;">
   <ul id="mbmcpebul_table" class="mbmcpebul_menulist css_menu" style="display:table;margin-left:auto;margin-right:auto;">
-  <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_1"><a href="">Home</a></div></div></li>
-  <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_2"><a href="">Book</a></div></div></li>
-  <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_3"><a href="">CD</a></div></div></li>
-  <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_4"><a href="">Ebook</a></div></div></li>
+  <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_1"><a href="userhome.php">Home</a></div></div></li>
+  <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_2"><a href="viewbooks.php">Book</a></div></div></li>
+  <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_3"><a href="viewcd.php">CD</a></div></div></li>
+  <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_4"><a href="viewebook.php">Ebook</a></div></div></li>
   <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_5"><a href="">Memo</a></div></div></li>
   <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_6"><a>Viewcart</a></div></div></li>
   <li><div class="buttonbg gradient_button gradient40" style="width: 100px;"><div class="icon_7"><a>Logout</a></div></div></li>
