@@ -55,7 +55,7 @@ require('connect.php');
 					<!-- start content -->
 					<div id="content">
 						<div class="post">
-							<h1 class="title">Viewcart</h1>
+							<h1 class="title" align="center">Viewcart</h1>
 							<div class="entry">
 						
 							<pre><?php
@@ -63,7 +63,7 @@ require('connect.php');
 							?></pre>
 						
 							<form action="checkout.php" method="POST">
-							<table width="100%" border="0">
+							<table width="70%" border="0" align="center">
 								<tr >
                                     <td> <b>No</b></td>
 									<td> <b>Product</b></td>
@@ -118,7 +118,7 @@ require('connect.php');
 							<td> <h4><?php echo $tot; ?> </h4></td>
 							</tr>
 							<tr><td colspan="10"><hr style="border:1px Solid #a1a1a1;">
-                                    <input type="submit" value="PROCEED TO CHECKOUT"></td></tr>
+                                    <input type="submit" class="a1-btn a1-blue" value="PROCEED TO CHECKOUT"></td></tr>
 							
 							<Br>
 								</table>						
