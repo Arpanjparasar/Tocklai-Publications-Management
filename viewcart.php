@@ -134,6 +134,7 @@ require('connect.php');
 				
 				<div style="clear: both;">&nbsp;</div>
 			</div>
-			
+		<br><br>
+<?php include'footer.php' ?>		
 </body>
 </html>
