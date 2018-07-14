@@ -153,7 +153,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
                             <TD style="color:black" WIDTH='6%'><b><u>PRICE</u></b></TD>
                             <TD style="color:black" WIDTH='8%'><b><u>QUANTITY</u></b></TD>
                             
-                            <TD style="color:black" WIDTH='9%'><b><u>FINAL PRICE</u></b></TD>
+                            
                             
 <TD style="color:black" WIDTH='9%'><b><u>BUYER NAME</u></b></TD>
 <TD style="color:black" WIDTH='9%'><b><u>MOBILE NUMBER</u></b></TD>
@@ -179,10 +179,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 										<td>'.$row2['total'].'
 										<td>'.$row['quantity'].'
 										
-										<td>'.$tot;
-
-
-										echo '</td>
+										
 										
 										<td>'.$row2['name'].'
 										<td>'.$row2['mobile'].'
@@ -214,7 +211,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
                         <TD style="color:black" WIDTH='50%'><b><u>PRICE</u></b></TD>
                         <TD style="color:black" WIDTH='50%'><b><u>QUANTITY</u></b></TD>
                         
-                        <TD style="color:black" WIDTH='25%'><b><u>FINAL PRICE</u></b></TD>
+                       
                        
                         <TD style="color:black" WIDTH='20%'><b><u>BUYER NAME</u></b></TD>
                         <TD style="color:black" WIDTH='20%'><b><u>MOBILE NUMBER</u></b></TD>
@@ -242,10 +239,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 										<td>'.$row2['total'].'
 										<td>'.$row['quantity'].'
 										
-										<td>'.$tot;
-
-
-                        echo '</td>
+										
 										
 										<td>'.$row2['name'].'
 										<td>'.$row2['mobile'].'
@@ -277,7 +271,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
                         <TD style="color:black" WIDTH='50%'><b><u>PRICE</u></b></TD>
                         <TD style="color:black" WIDTH='50%'><b><u>QUANTITY</u></b></TD>
                         
-                        <TD style="color:black" WIDTH='25%'><b><u>FINAL PRICE</u></b></TD>
+                      
                         
                         <TD style="color:black" WIDTH='20%'><b><u>BUYER NAME</u></b></TD>
                         <TD style="color:black" WIDTH='20%'><b><u>MOBILE NUMBER</u></b></TD>
@@ -305,10 +299,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 										<td>'.$row2['total'].'
 										<td>'.$row['quantity'].'
 										
-										<td>'.$tot;
-
-
-                        echo '</td>
+										
 										
 										<td>'.$row2['name'].'
 										<td>'.$row2['mobile'].'
@@ -338,7 +329,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
                         <TD style="color:black" WIDTH='50%'><b><u>PRICE</u></b></TD>
                         <TD style="color:black" WIDTH='50%'><b><u>QUANTITY</u></b></TD>
                        
-                        <TD style="color:black" WIDTH='25%'><b><u>FINAL PRICE</u></b></TD>
+                     
                         
                         <TD style="color:black" WIDTH='20%'><b><u>BUYER NAME</u></b></TD>
                         <TD style="color:black" WIDTH='20%'><b><u>MOBILE NUMBER</u></b></TD>
@@ -366,10 +357,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 										<td>'.$row2['total'].'
 										<td>'.$row['quantity'].'
 										
-										<td>'.$tot;
-
-
-                        echo '</td>
+										
 										
 										<td>'.$row2['name'].'
 										<td>'.$row2['mobile'].'
