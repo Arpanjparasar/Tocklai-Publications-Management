@@ -148,6 +148,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 <td WIDTH='5%' style="color:black"><b><u>SR.NO</u></b></td>
 <TD style="color:black" WIDTH='9%'><b><u>CATEGORY</u></b></TD>
 <TD style="color:black" WIDTH='9%'><b><u>ITEMS SOLD </u></b></TD>
+<TD style="color:black" WIDTH='9%'><b><u>TYPE </u></b></TD>
                             <TD style="color:black" WIDTH='7%'><b><u>BOOK,CD,EBOOK</u></b></TD>
                             <TD style="color:black" WIDTH='6%'><b><u>PRICE</u></b></TD>
                             <TD style="color:black" WIDTH='8%'><b><u>QUANTITY</u></b></TD>
@@ -173,6 +174,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 										<td>'.$count.'
 										<td>'.$row2['category'].'
 										<td>'.$row['name'].'
+										<td>'.$row2['selltype'].'
 										<td>'.$row['type'].'
 										<td>'.$row['rate'].'
 										<td>'.$row['quantity'].'
@@ -207,6 +209,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
                         <td WIDTH='10%' style="color:black"><b><u>SR.NO</u></b></td>
                         <TD style="color:black" WIDTH='50%'><b><u>CATEGORY</u></b></TD>
                         <TD style="color:black" WIDTH='50%'><b><u>ITEMS SOLD </u></b></TD>
+						 <TD style="color:black" WIDTH='50%'><b><u>TYPE</u></b></TD>
                         <TD style="color:black" WIDTH='50%'><b><u>BOOK,CD,EBOOK</u></b></TD>
                         <TD style="color:black" WIDTH='50%'><b><u>PRICE</u></b></TD>
                         <TD style="color:black" WIDTH='50%'><b><u>QUANTITY</u></b></TD>
@@ -234,6 +237,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 										<td>'.$count.'
 										<td>'.$row2['category'].'
 										<td>'.$row['name'].'
+										<td>'.$row2['selltype'].'
 										<td>'.$row['type'].'
 										<td>'.$row['rate'].'
 										<td>'.$row['quantity'].'
@@ -268,6 +272,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
                         <td WIDTH='10%' style="color:black"><b><u>SR.NO</u></b></td>
                         <TD style="color:black" WIDTH='50%'><b><u>MEMBERSHIP</u></b></TD>
                         <TD style="color:black" WIDTH='50%'><b><u>ITEMS SOLD </u></b></TD>
+						 <TD style="color:black" WIDTH='50%'><b><u>TYPE </u></b></TD>
                         <TD style="color:black" WIDTH='50%'><b><u>BOOK,CD,EBOOK</u></b></TD>
                         <TD style="color:black" WIDTH='50%'><b><u>PRICE</u></b></TD>
                         <TD style="color:black" WIDTH='50%'><b><u>QUANTITY</u></b></TD>
@@ -295,6 +300,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 										<td>'.$count.'
 										<td>'.$row2['category'].'
 										<td>'.$row['name'].'
+										<td>'.$row2['selltype'].'
 										<td>'.$row['type'].'
 										<td>'.$row['rate'].'
 										<td>'.$row['quantity'].'
@@ -327,6 +333,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
                         <td WIDTH='10%' style="color:black"><b><u>SR.NO</u></b></td>
                         <TD style="color:black" WIDTH='50%'><b><u>MEMBERSHIP</u></b></TD>
                         <TD style="color:black" WIDTH='50%'><b><u>ITEMS SOLD </u></b></TD>
+						 <TD style="color:black" WIDTH='50%'><b><u>TYPE </u></b></TD>
                         <TD style="color:black" WIDTH='50%'><b><u>BOOK,CD,EBOOK</u></b></TD>
                         <TD style="color:black" WIDTH='50%'><b><u>PRICE</u></b></TD>
                         <TD style="color:black" WIDTH='50%'><b><u>QUANTITY</u></b></TD>
@@ -354,6 +361,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 										<td>'.$count.'
 										<td>'.$row2['category'].'
 										<td>'.$row['name'].'
+										<td>'.$row2['selltype'].'
 										<td>'.$row['type'].'
 										<td>'.$row['rate'].'
 										<td>'.$row['quantity'].'
