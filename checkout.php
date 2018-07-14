@@ -29,10 +29,7 @@ require('connect.php');
 
 </div><br><br>
 
-            <div class="freshdesignweb-top">
-                <div class="clr"></div>
-				
-            </div>
+            
 		
       <div  class="form">
     		<form id="contactform" method="post" action="checkout_db.php"> 
@@ -50,13 +47,11 @@ require('connect.php');
             <input id="phone" name="phone" required="" type="text"> <br>
 			<p class="contact"><label for="name">Total</label></p> 
     			<input id="total" name="total" value="<?php echo $total; ?>" readonly tabindex="1" type="text"> 
-
-
-
-				
-            <input class="buttom" name="submit" id="submit" tabindex="5" value="Confirm & Proceed" type="submit"> 	 
+		<input class="buttom" name="submit" id="submit" tabindex="5" value="Confirm & Proceed" type="submit"> 	 
    </form> 
 </div>      
-</div>
+
+
+
 </body>
 </html>
