@@ -176,7 +176,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 										<td>'.$row['name'].'
 										<td>'.$row2['selltype'].'
 										<td>'.$row['type'].'
-										<td>'.$row['rate'].'
+										<td>'.$row2['total'].'
 										<td>'.$row['quantity'].'
 										
 										<td>'.$tot;
@@ -239,7 +239,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 										<td>'.$row['name'].'
 										<td>'.$row2['selltype'].'
 										<td>'.$row['type'].'
-										<td>'.$row['rate'].'
+										<td>'.$row2['total'].'
 										<td>'.$row['quantity'].'
 										
 										<td>'.$tot;
@@ -302,7 +302,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 										<td>'.$row['name'].'
 										<td>'.$row2['selltype'].'
 										<td>'.$row['type'].'
-										<td>'.$row['rate'].'
+										<td>'.$row2['total'].'
 										<td>'.$row['quantity'].'
 										
 										<td>'.$tot;
@@ -363,7 +363,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 										<td>'.$row['name'].'
 										<td>'.$row2['selltype'].'
 										<td>'.$row['type'].'
-										<td>'.$row['rate'].'
+										<td>'.$row2['total'].'
 										<td>'.$row['quantity'].'
 										
 										<td>'.$tot;
