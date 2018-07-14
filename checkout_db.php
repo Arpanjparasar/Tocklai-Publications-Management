@@ -49,12 +49,12 @@ $query5="insert into orders(sellername,name,category,address,mobile,total,orderd
 $query6="delete from cart where user='".$user."'";
 
 if(mysqli_query($conn,$query6)){
-    $message = "Order placed successfully.☺";
+    $message = "SELL SUCCESSFUL.☺";
     echo "<script type='text/javascript'>alert('$message');
     window.location.href='userhome.php';</script>";
 } 
 else{
-    $message = "Order placed failed!.";
+    $message = "SELL NOT SUCCESSFUL.";
     echo "<script type='text/javascript'>alert('$message');
     window.location.href='userhome.php';</script>";
 }
