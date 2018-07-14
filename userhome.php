@@ -20,10 +20,10 @@
 
 </div><br><br><br>
 
-			<br><br><div class="a1-container a1-black a1-center" style="width:50%; margin-left=auto;"  align="center">
+			<br><br><div class="a1-container a1-black a1-center" style="width:50%; margin-left:24%;"  align="center">
                     <h6 align="center">SEARCH</h6>
                 </div>
-				<form method="GET" action="searchresults.php">
+				<form style="margin-left:24%;" method="GET" action="searchresults.php">
 					<fieldset>
 					<input size=89 type="text" id="s" name="s" value="" />
 					<input class="a1-btn a1-blue" type="submit" id="x" value="Search" />
