@@ -4,7 +4,8 @@
 $user="hello";
 require('connect.php');
 			$name=$_POST['name'];
-			$address=$_POST['address'];
+            $address=$_POST['address'];
+            $type=$_POST['type'];
 
 			$phone=$_POST['phone'];
 			$total=$_POST['total'];
@@ -14,7 +15,7 @@ require('connect.php');
             date_default_timezone_set('Asia/Kolkata');
             $odate=date("Y-m-d h:i:s");
 
-$query5="insert into orders(sellername,name,category,address,mobile,total,orderdate) values('$user','$name','$category','$address','$phone','$total','$odate')";
+$query5="insert into orders(sellername,name,category,type,address,mobile,total,orderdate) values('$user','$name','$category','$type','$address','$phone','$total','$odate')";
     mysqli_query($conn,$query5) or die("can't Execute... query5");
 
     $query2="select * from cart where user='".$user."'";
@@ -49,7 +50,7 @@ $query5="insert into orders(sellername,name,category,address,mobile,total,orderd
 $query6="delete from cart where user='".$user."'";
 
 if(mysqli_query($conn,$query6)){
-    $message = "SELL SUCCESSFUL.☺";
+    $message = "TRANSACTION SUCCESSFUL.☺";
     echo "<script type='text/javascript'>alert('$message');
     window.location.href='userhome.php';</script>";
 } 

@@ -42,6 +42,12 @@ require('connect.php');
     			 <input id="category" name="category" required="" tabindex="1" type="radio" value="Member"> Member  &nbsp;&nbsp;&nbsp;
 				 <input id="category" name="category" required="" tabindex="1" type="radio" value="Non-Member"> Non Member  
     			 
+
+				  <p class="contact"><label for="name">Type</label></p> 
+    			 <input id="type" name="type" required="" tabindex="1" type="radio" value="Sell" checked onclick="myfunc(1)"> Sell  &nbsp;&nbsp;&nbsp;
+				 <input id="type" name="type" required="" tabindex="1" type="radio" value="Transfer" onclick="myfunc(2)"> Transfer  
+
+
     			<p class="contact"><label for="email">Address</label></p> 
     			<textarea id="address" name="address" placeholder="Address" required="" cols="45" row="10"type="email"> </textarea>
                 
@@ -58,5 +64,18 @@ require('connect.php');
    </form> 
 </div>      
 </div>
+
+<script>
+
+ var tot=document.getElementById('total');
+ var total=tot.value;
+  function myfunc(n){
+   if(n==1)
+    	tot.value=total;
+   else if(n==2)
+		tot.value=0;
+  }
+</script>
+
 </body>
 </html>
