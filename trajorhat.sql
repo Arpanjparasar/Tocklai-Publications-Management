@@ -11,7 +11,7 @@
  Target Server Version : 50714
  File Encoding         : 65001
 
- Date: 14/07/2018 23:50:38
+ Date: 15/07/2018 11:13:36
 */
 
 SET NAMES utf8mb4;
@@ -41,7 +41,7 @@ INSERT INTO `book` VALUES (3, 'Tea field Management', 'Sanyal', 'NA', 'Tea Resea
 INSERT INTO `book` VALUES (4, 'tea management', 'Wakis', 'NA', 'Tea Research Association', '2006', '6498431144', 340, 40);
 INSERT INTO `book` VALUES (5, 'PHP', 'yusub', 'NA', 'Tea Research Association', '5th Edition', '65163543', 250, 30);
 INSERT INTO `book` VALUES (6, 'russell', 'yamin', 'NA', 'Tea Research Association', '2007', '.354353', 345, 14);
-INSERT INTO `book` VALUES (7, 'TEA mannual', 'saikia', 'NA', 'Tea Research Association', '6 th edition', '456447643434', 420, 55);
+INSERT INTO `book` VALUES (7, 'TEA mannual', 'saikia', 'NA', 'Tea Research Association', '6 th edition', '456447643434', 420, 45);
 
 -- ----------------------------
 -- Table structure for cart
@@ -57,7 +57,7 @@ CREATE TABLE `cart`  (
   `rate` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `discount` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 18 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 21 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for cd
@@ -128,6 +128,7 @@ INSERT INTO `itemsold` VALUES (18, 'hello', '2', 'Tea Culture', 'ebook', '1', '3
 INSERT INTO `itemsold` VALUES (20, 'hello', '2', 'Tea Culture', 'cd', '1', '160', '0', '2018-07-14 11:46:55');
 INSERT INTO `itemsold` VALUES (21, 'hello', '6', 'russell', 'book', '10', '345', '0', '2018-07-14 11:48:13');
 INSERT INTO `itemsold` VALUES (22, 'hello', '6', 'russell', 'book', '11', '345', '0', '2018-07-14 11:49:59');
+INSERT INTO `itemsold` VALUES (25, 'User', '7', 'TEA mannual', 'book', '10', '420', '0', '2018-07-15 11:12:13');
 
 -- ----------------------------
 -- Table structure for orders
@@ -144,7 +145,7 @@ CREATE TABLE `orders`  (
   `total` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `orderdate` datetime(0) NOT NULL,
   PRIMARY KEY (`orderid`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 23 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 26 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of orders
@@ -154,6 +155,9 @@ INSERT INTO `orders` VALUES (18, 'hello', 'Lori J Donoho', 'Member', '', '3527  
 INSERT INTO `orders` VALUES (20, 'hello', 'Telusko Learning', 'Member', 'Transfer', 'dewal road', '2345678912', '0', '2018-07-14 11:46:55');
 INSERT INTO `orders` VALUES (21, 'hello', 'DJ Mavrik', 'Non-Member', 'Sell', 'dewal road', '2345678912', '3450', '2018-07-14 11:48:13');
 INSERT INTO `orders` VALUES (22, 'hello', 'Hitesh Choudhary', 'Member', 'Transfer', 'Doha bora', '8011806046', '0', '2018-07-14 11:49:59');
+INSERT INTO `orders` VALUES (23, 'User', 'Lori J Donoho', 'Non-Member', 'Sell', '3527  Hart Ridge Road', '9293238998', '2100', '2018-07-15 11:08:16');
+INSERT INTO `orders` VALUES (24, 'User', 'Eric J Yang', 'Member', 'Sell', '2069  Quarry Drive', '3362013747', '4200', '2018-07-15 11:09:15');
+INSERT INTO `orders` VALUES (25, 'User', 'hello world', 'Member', 'Sell', 'dewal road', '2345678912', '4200', '2018-07-15 11:12:13');
 
 -- ----------------------------
 -- Table structure for user
@@ -164,14 +168,15 @@ CREATE TABLE `user`  (
   `uname` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `uemail` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `ugender` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `passsword` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `password` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `contact` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   PRIMARY KEY (`uid`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 2 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 3 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES (1, 'admin', 'admin@gmail.com', 'Male', 'admin', '9876543210');
+INSERT INTO `user` VALUES (1, 'admin', 'admin@gmail.com', 'Male', 'tra785008#', '9876543210');
+INSERT INTO `user` VALUES (2, 'user', 'user@gmail.com', 'Male', 'user785008#', '9087654321');
 
 SET FOREIGN_KEY_CHECKS = 1;

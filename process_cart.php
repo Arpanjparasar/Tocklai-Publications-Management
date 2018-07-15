@@ -5,7 +5,7 @@ require('connect.php');
     $type=$_GET['type'];
     $id=$_GET['id'];
 
-$user='hello';
+$user='User';
 $query="insert into cart(`itemid`,`user`,`name`,`type`,`quantity`,`rate`,`discount`) values('$id','$user','$name','$type','1','$price','0')";
 
 if(mysqli_query($conn,$query))

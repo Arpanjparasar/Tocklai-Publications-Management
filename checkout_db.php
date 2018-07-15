@@ -1,7 +1,7 @@
 <?php
  session_start();
 //  $user=$_SESSION['unm'];
-$user="hello";
+$user="User";
 require('connect.php');
 			$name=$_POST['name'];
             $address=$_POST['address'];

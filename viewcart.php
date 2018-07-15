@@ -1,7 +1,14 @@
-<?php session_start();
+<?php
 require('connect.php');
 ?>
+<?php
+session_start();
+if(!isset($_SESSION["userlogin"]))
+{
+	header("location:index.php");
+}
 
+?>
 
 
 <html>

@@ -1,7 +1,12 @@
 <?php
+
  session_start();
- extract($_POST);
- extract($_SESSION);
+ if(!isset($_SESSION["userlogin"]))
+ {
+	 header("location:index.php");
+ }
+ 
+
  
 require('connect.php'); 	
 	//echo $uid;

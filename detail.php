@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION["userlogin"]))
+{
+	header("location:index.php");
+}
+
+?>
 <?php //session_start();
 	require('connect.php');
 	if(isset($_GET['eid']))

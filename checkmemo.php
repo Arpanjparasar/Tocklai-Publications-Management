@@ -1,9 +1,12 @@
-<?php session_start();
+<?php 
 
-	//if(!(isset($_SESSION['status'])))
-	//{
-		//header("location:../index.php");
-	//}
+
+session_start();
+if(!isset($_SESSION["userlogin"]))
+{
+	header("location:index.php");
+}
+
 	require('connect.php');
 	$q="select * from itemsold order by id desc";
 	 $res=mysqli_query($conn,$q) or die("Can't Execute Query...");
