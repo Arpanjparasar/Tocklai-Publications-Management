@@ -8,7 +8,7 @@ if(isset($_SESSION["adminlogin"]))
 }
 ?>
 <head>
-	<title>Login V1</title>
+	<title>TRA | ADMIN LOGIN</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -66,10 +66,10 @@ if(isset($_SESSION["adminlogin"]))
 
 					<div class="text-center p-t-12">
 						<span class="txt1">
-							Forgot
+							
 						</span>
 						<a class="txt2" href="#">
-							Username / Password?
+							
 						</a>
 					</div>
 
