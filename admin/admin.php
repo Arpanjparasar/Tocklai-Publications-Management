@@ -1,3 +1,12 @@
+<?php
+ session_start();
+ if(!isset($_SESSION["adminlogin"]))
+ {
+	 header("location:index.php");
+ }
+ 
+?>
+
 <html>
 <head>
 <meta charset="utf-8">

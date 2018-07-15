@@ -22,7 +22,7 @@
     <li class="gradient_menuitem gradient25 last_item"><a href="checkcdstock.php">Check CD Stock</a></li>
     </ul></li>
   <li><div class="buttonbg gradient_button gradient40" style="width: 84px;"><div class="icon_9"><a href="records.php">Reports</a></div></div></li>
-  <li><div class="buttonbg gradient_button gradient40" style="width: 82px;"><div class="icon_10"><a>Logout</a></div></div></li>
+  <li><div class="buttonbg gradient_button gradient40" style="width: 82px;"><div class="icon_10"><a href="logout.php">Logout</a></div></div></li>
   </ul>
 </div>
 <!-- Menus will work without this javascript file. It is used only for extra

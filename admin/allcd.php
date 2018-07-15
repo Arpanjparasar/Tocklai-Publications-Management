@@ -2,6 +2,12 @@
 // session_start();
 require('connect.php');
 
+session_start();
+ if(!isset($_SESSION["adminlogin"]))
+ {
+	 header("location:index.php");
+ }
+
 	$q="select * from cd";
 	 $res=mysqli_query($conn,$q) or die("Can't Execute Query...");
 	?>
