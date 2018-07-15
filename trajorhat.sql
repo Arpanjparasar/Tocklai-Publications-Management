@@ -11,7 +11,7 @@
  Target Server Version : 50714
  File Encoding         : 65001
 
- Date: 14/07/2018 23:50:38
+ Date: 15/07/2018 00:41:29
 */
 
 SET NAMES utf8mb4;
@@ -138,7 +138,7 @@ CREATE TABLE `orders`  (
   `sellername` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `category` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `type` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `selltype` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `address` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `mobile` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `total` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
