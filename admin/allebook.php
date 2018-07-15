@@ -80,6 +80,7 @@ require('connect.php');
 }
 
 </script>
-
+<br><br>
+<?php include'footer.php' ?>
 </body>
 </html>

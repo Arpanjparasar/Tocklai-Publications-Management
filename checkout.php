@@ -101,6 +101,7 @@ require('connect.php');
 		tot.value=0;
   }
 </script>
-
+<br><br>
+<?php include'footer.php' ?>
 </body>
 </html>

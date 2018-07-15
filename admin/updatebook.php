@@ -93,4 +93,6 @@ require('connect.php');
 
 
 </body>
+<br><br>
+<?php include'footer.php' ?>
 </html>

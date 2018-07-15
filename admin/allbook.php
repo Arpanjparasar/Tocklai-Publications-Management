@@ -94,6 +94,7 @@ session_start();
 }
 
 </script>
-
+<br><br>
+<?php include'footer.php' ?>
 </body>
 </html>
