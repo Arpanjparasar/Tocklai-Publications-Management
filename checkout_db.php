@@ -15,7 +15,7 @@ require('connect.php');
             date_default_timezone_set('Asia/Kolkata');
             $odate=date("Y-m-d h:i:s");
 
-$query5="insert into orders(sellername,name,category,selltype,address,mobile,total,orderdate) values('$user','$name','$category','$type','$address','$phone','$total','$odate')";
+$query5="insert into orders(sellername,buyername,category,selltype,address,mobile,total,orderdate) values('$user','$name','$category','$type','$address','$phone','$total','$odate')";
     mysqli_query($conn,$query5) or die("can't Execute... query5");
 
     $query2="select * from cart where user='".$user."'";

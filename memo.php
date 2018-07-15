@@ -71,7 +71,7 @@ line-height:0.5cm;
   </tr>
   
   <tr>
-    <td height="56" colspan="2">Delivered to: <?php echo $row['name']; ?> &ensp; Address: <?php echo $row['address']; ?> <br> Contact No: <?php echo $row['mobile']; ?> </td>
+    <td height="56" colspan="2">Delivered to: <?php echo $row['buyername']; ?> &ensp; Address: <?php echo $row['address']; ?> <br> Contact No: <?php echo $row['mobile']; ?> </td>
     <td>Date: <?php echo $row['orderdate']; ?>      Mode of Delivery: Byhand/regd. Post</td>
     
   </tr>

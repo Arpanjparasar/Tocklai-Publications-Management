@@ -1,7 +1,7 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : mysql
+ Source Server         : hp
  Source Server Type    : MySQL
  Source Server Version : 50714
  Source Host           : localhost:3306
@@ -11,7 +11,7 @@
  Target Server Version : 50714
  File Encoding         : 65001
 
- Date: 15/07/2018 11:13:36
+ Date: 15/07/2018 12:24:28
 */
 
 SET NAMES utf8mb4;
@@ -137,7 +137,7 @@ DROP TABLE IF EXISTS `orders`;
 CREATE TABLE `orders`  (
   `orderid` int(11) NOT NULL AUTO_INCREMENT,
   `sellername` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `name` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `buyername` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `category` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `selltype` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `address` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,

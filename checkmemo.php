@@ -187,7 +187,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 
 										echo '</td>
 										
-										<td>'.$row2['name'].'
+										<td>'.$row2['buyername'].'
 										<td>'.$row2['mobile'].'
 										
 										<td>'.$row['time'].'
@@ -253,7 +253,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 
                         echo '</td>
 										
-										<td>'.$row2['name'].'
+										<td>'.$row2['buyername'].'
 										<td>'.$row2['mobile'].'
 										
 										<td>'.$row['time'].'
@@ -319,7 +319,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 
                         echo '</td>
 										
-										<td>'.$row2['name'].'
+										<td>'.$row2['buyername'].'
 										<td>'.$row2['mobile'].'
 										
 										<td>'.$row['time'].'
@@ -383,7 +383,7 @@ if(isset($_GET['first']) && isset($_GET['second']) && isset($_GET['type']))
 
                         echo '</td>
 										
-										<td>'.$row2['name'].'
+										<td>'.$row2['buyername'].'
 										<td>'.$row2['mobile'].'
 										
 										<td>'.$row['time'].'
