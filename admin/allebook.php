@@ -58,7 +58,7 @@ require('connect.php');
                                 <td>'.$row['price'];
 										
 								
-									echo 	'<td><form action="process_del_ebook" method="GET"><input type="hidden" name="id" value='.$row['eid'].'><input type="image" src="images/drop.png" onclick="return ConfirmDelete()" ></form></td>		
+									echo 	'<td><form action="process_del_ebook.php" method="GET"><input type="hidden" name="id" value='.$row['eid'].'><input type="image" src="images/drop.png" onclick="return ConfirmDelete()" ></form></td>		
 							
 									</tr>';
 									$count++;

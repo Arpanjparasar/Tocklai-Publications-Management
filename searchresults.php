@@ -49,7 +49,7 @@ require('connect.php');
 													}
 													
 													echo '<td valign="top" width="20%" align="center">
-														<a href="detail.php?id='.$row['bid'].'">
+														<a href="detail.php?bid='.$row['bid'].'">
 														
 														<br>'.$row['bname'].'</a>
 													</td>';

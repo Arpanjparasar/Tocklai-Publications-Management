@@ -71,7 +71,7 @@ session_start();
 
 										
 										
-									echo 	'<td><form action="process_del_cd" method="GET"><input type="hidden" name="id" value='.$row['cid'].'><input type="image" src="images/drop.png" onclick="return ConfirmDelete()" ></form></td>
+									echo 	'<td><form action="process_del_cd.php" method="GET"><input type="hidden" name="id" value='.$row['cid'].'><input type="image" src="images/drop.png" onclick="return ConfirmDelete()" ></form></td>
 												
 									<td><button onclick="addBook('.$row['cid'].')"><img src="images/ADD.png" ></button></td>
 									</tr>';
